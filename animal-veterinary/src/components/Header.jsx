@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <div className="inner">
         <h1 className="logo">
-          <link to="index.html">Pet clinic</link>
+          <Link to="/">Pet clinic</Link>
         </h1>
         <div className="fright">
           <div className="header-meta">
@@ -29,43 +30,43 @@ function Header() {
           <nav>
             <ul className="sf-menu">
               <li className="current">
-                <a href="index.html">main</a>
+                <Link to="/">home</Link>
               </li>
               <li>
-                <a href="about.html">about</a>
+                <Link to="/about">nosotros</Link>
               </li>
               <li>
                 {" "}
-                <a href="services.html">services</a>
+                <Link to="/services">servicios</Link>
                 <ul>
                   <li>
-                    <a href="#">Maecenas faucibus</a>
+                    <Link to="#">Maecenas faucibus</Link>
                   </li>
                   <li>
-                    <a href="#">Fusce tincidunt</a>
+                    <Link to="#">Fusce tincidunt</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="#">tempor eros</a>
+                    <Link to="#">tempor eros</Link>
                     <ul>
                       <li>
-                        <a href="#">ut viverra</a>
+                        <Link to="#">ut viverra</Link>
                       </li>
                       <li>
-                        <a href="#">hendrerit mauris</a>
+                        <Link to="#">hendrerit mauris</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="#">mauris ut du</a>
+                    <Link to="#">mauris ut du</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="links.html">links</a>
+                <Link to="links.html">links</Link>
               </li>
               <li>
-                <a href="contacts.html">contacts</a>
+                <Link to="contacts.html">contacts</Link>
               </li>
             </ul>
           </nav>
